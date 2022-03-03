@@ -11,6 +11,15 @@ Para ejecutar este proyecto en local tenga las siguientes consideraciones:
     + spring.datasource.username= \<add your user name>
     + spring.datasource.password= \<add your password>
 
+Después de eso puede ejecutar el proyecto en local, bien sea con el run/debug que posea su IDE preferido o por medio de los siguientes comandos:
+
++ Desde una terminal introduce el siguiente comando en la carpeta del proyecto (es decir, en la carpeta que contiene los archivos de Spring Boot)  
+    + `mvn clean install` Si el comando se ejecuta correctamente, obtendra el mensaje **"BUILD SUCCESS"** en cuanto se hayan creado los archivos de almacenamiento. El archivo ejecutable se guarda en la carpeta **"target"**. (**Nota:** Este comando compila y genera un programa java ejecutable)
+
++ Seguido ingresará desde la misma terminal a la carpeta **"target"** generada, e introducirá el siguiente comando para ejecutar el programa:
+    + `java -jar challenge-0.0.1-SNAPSHOT.jar` Si el comando se ejecuta correctamente, podrá consumir las API's desde su máquina local.
+
+
 ### Consumir las APIs
 
 Esta API se puede ejecutar y consumir de forma local, y también se puede consumir de forma global, está desplegada sobre la plataforma de servicio en la nube Heroku.
